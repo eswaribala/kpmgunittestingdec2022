@@ -11,6 +11,6 @@ namespace BankingApp.Contexts
             this.Database.EnsureCreated();
         }
 
-        DbSet<Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     }
 }
