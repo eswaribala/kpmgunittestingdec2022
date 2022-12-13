@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,13 +7,20 @@ using System.Threading.Tasks;
 
 namespace BankingTest.DataGenerators
 {
-    public class AccountDataGenerator
+    //custom collection
+    public class AccountDataGenerator : IEnumerable<Object[]>
     {
-        public static IEnumerable<Object[]> GenerateData()
+        private readonly List<Object[]> _data= new List<Object[]>()
         {
-            yield return new Object[] { new Random().Next(50000000), new Random().Next(2022) + ",9,11" };
-            yield return new Object[] { new Random().Next(50000000), new Random().Next(2022) + ",9,14" };
-        }
+             new Object[] { new Random().Next(50000000), new Random().Next(2022)+",9,4" },
+             new Object[] { new Random().Next(50000000), new Random().Next(2022) + ",9,12" }
 
+       };
+
+    public IEnumerator<object[]> GetEnumerator()=>_data.GetEnumerator();
+        
+
+        IEnumerator IEnumerable.GetEnumerator()=>GetEnumerator();
+        
     }
 }
