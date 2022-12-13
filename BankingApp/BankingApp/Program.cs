@@ -1,6 +1,12 @@
-var builder = WebApplication.CreateBuilder(args);
+using BankingApp.Contexts;
+using Microsoft.EntityFrameworkCore;
 
+var builder = WebApplication.CreateBuilder(args);
+ConfigurationManager configuration = builder.Configuration;
 // Add services to the container.
+builder.Services.AddDbContext<CustomerContext>(options =>
+options.UseSqlServer(configuration.
+GetConnectionString("BankingConn")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

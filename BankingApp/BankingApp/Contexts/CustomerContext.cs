@@ -8,7 +8,7 @@ namespace BankingApp.Contexts
 
         public CustomerContext(DbContextOptions<CustomerContext> dbContext):base(dbContext)
         {
-
+            this.Database.EnsureCreated();
         }
 
         DbSet<Customer> Customers { get; set; }
