@@ -12,8 +12,8 @@ namespace BankingTest.DataGenerators
     {
         private readonly List<Object[]> _data= new List<Object[]>()
         {
-             new Object[] { new Random().Next(50000000), new Random().Next(2022)+",9,4" },
-             new Object[] { new Random().Next(50000000), new Random().Next(2022) + ",9,12" }
+             new Object[] { new Random().Next(50000000), new Random().Next(1970,2022)+",9,4" },
+             new Object[] { new Random().Next(50000000), new Random().Next(1970,2022) + ",9,12" }
 
        };
 

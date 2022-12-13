@@ -1,4 +1,5 @@
-﻿using BankingApp.Models;
+﻿using BankingApp.Exceptions;
+using BankingApp.Models;
 using BankingApp.Validators;
 using BankingTest.DataGenerators;
 using System;
@@ -35,11 +36,28 @@ namespace BankingTest
 
         }
 
+        [Trait("Category","Exception")]
+
+        [Fact]
+        public void TestDOP()
+        {
+            var Account = new Account
+            {
+                OpeningDate = new DateTime(2023, 1, 1),
+                RunningTotal = 59695
+            };
+
+          var caughtException=  Assert.Throws<DOPException>(() =>Account.ReadDOP());
+          Assert.Equal("Date of opening is above the current date",caughtException.Message);    
+
+        }
+
+
 
         private static IEnumerable<Object[]> GenerateData()
         {
-            yield return new Object[] { new Random().Next(50000000), new Random().Next(2022)+",12,1" };
-            yield return new Object[] { new Random().Next(50000000), new Random().Next(2022) + ",12,1" };
+            yield return new Object[] { new Random().Next(50000000), new Random().Next(1970,2022)+",12,1" };
+            yield return new Object[] { new Random().Next(50000000), new Random().Next(1970,2022) + ",12,1" };
         }
 
 

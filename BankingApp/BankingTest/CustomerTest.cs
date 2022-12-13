@@ -24,17 +24,18 @@ namespace BankingTest
                 LastName = "Bala",
                 MiddleName = ""
             };
-            this.Customer.Address = new Address
-            {
-                City = "Chennai",
-                DoorNo = "536",
-                StreetName = "Rajaji St"
-            };
+            //this.Customer.Address = new Address
+            //{
+            //    City = "Chennai",
+            //    DoorNo = "536",
+            //    StreetName = "Rajaji St"
+            //};
             this.Customer.Email = "Parameswaribala@gmail.com";
             this.Customer.Password = "Test@123";
             this.Customer.ContactNo = 9952032862;
         }
 
+        [Trait("Category","dev")]
         [Fact] //[Test]
         public void TestAccountNo()
         {
@@ -43,7 +44,7 @@ namespace BankingTest
 
         }
 
-
+        [Trait("Category", "dev")]
         [Fact]
 
         public void TestCustomerProperties()

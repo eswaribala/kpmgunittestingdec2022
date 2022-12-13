@@ -1,0 +1,16 @@
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\b\BankingApp\bin\Debug\net6.0\appsettings.Development.json
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\b\BankingApp\bin\Debug\net6.0\appsettings.json
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\b\BankingApp\bin\Debug\net6.0\BankingApp.exe
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\b\BankingApp\bin\Debug\net6.0\BankingApp.deps.json
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\b\BankingApp\bin\Debug\net6.0\BankingApp.runtimeconfig.json
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\b\BankingApp\bin\Debug\net6.0\BankingApp.dll
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\BankingApp.csproj.AssemblyReference.cache
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\BankingApp.GeneratedMSBuildEditorConfig.editorconfig
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\BankingApp.AssemblyInfoInputs.cache
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\BankingApp.AssemblyInfo.cs
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\scopedcss\bundle\BankingApp.styles.css
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\BankingApp.csproj.CopyComplete
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\BankingApp.dll
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\refint\BankingApp.dll
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\BankingApp.genruntimeconfig.cache
+G:\Local disk\TDD\KPMGWorkspace\BankingApp\.vs\BankingApp\v17\lut\0\i\BankingApp\net6.0\ref\BankingApp.dll

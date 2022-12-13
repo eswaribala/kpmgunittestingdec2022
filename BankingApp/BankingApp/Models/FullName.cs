@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace BankingApp.Models
 {
-
+    [Owned]
     public class FullName
     {
         [Required,RegularExpression("[A-Za-z]+",ErrorMessage ="Pattern Not Matching")]
