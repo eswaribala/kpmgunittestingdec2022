@@ -8,6 +8,7 @@ namespace BankingApp.Models
     {
         [Key]
         [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Column("Account_No")]
         public long AccountNo { get; set; }
         public FullName? FullName { get; set; }

@@ -1,5 +1,6 @@
 ﻿using BankingApp.Models;
 using BankingApp.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -38,7 +39,7 @@ namespace BankingApp.Controllers
         public async Task<IActionResult> Post([FromBody] Customer Customer)
         {
             await this._customerService.AddCustomer(Customer);
-            return CreatedAtRoute("Customer",
+            return CreatedAtAction(nameof(GetCustomerById),
                             new { id = Customer.AccountNo }, Customer);
 
         }
@@ -48,7 +49,7 @@ namespace BankingApp.Controllers
         public async Task<IActionResult> Put([FromBody] Customer Customer)
         {
             await this._customerService.UpdateCustomer(Customer);
-            return CreatedAtRoute("Customer",
+            return CreatedAtAction("Customer",
                             new { id = Customer.AccountNo }, Customer);
         }
 
