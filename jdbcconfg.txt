@@ -1,4 +1,4 @@
-jdbc:mysql://mysql:3306/testdb?useSSL=true
+jdbc:mysql://mysqlservice:3306/testdb?useSSL=true
 username=root
 password=password
 com.mysql.jdbc.Driver
